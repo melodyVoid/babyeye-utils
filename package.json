@@ -4,7 +4,7 @@
   "description": "utility library for babyeye",
   "main": "dist/babyeye-utils.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --hot --config build/webpack.dev.conf.js --mode development",
+    "dev": "webpack-dev-server --open --hot --inline --config build/webpack.dev.conf.js --mode development",
     "build": "webpack --config build/webpack.prod.conf.js --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
