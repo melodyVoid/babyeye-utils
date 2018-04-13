@@ -1,3 +1,4 @@
 import { parseTime } from '../src/index'
 
-console.log(parseTime)
+const time = +new Date()
+console.log(parseTime(time))
