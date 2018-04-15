@@ -1,4 +1,5 @@
 import * as date from './date'
+import * as array from './array'
 
 const utils = {
   add(...items) {
@@ -12,3 +13,4 @@ if (!window.bu) {
 }
 
 export const parseTime = date.parseTime
+export const chunkArray = array.chunkArray
