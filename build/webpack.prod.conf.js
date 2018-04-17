@@ -14,7 +14,8 @@ module.exports = {
       publicPath: '/dist/',
       library: 'babyeye-utils',
       libraryTarget: 'umd',
-      umdNamedDefine: true
+      umdNamedDefine: true,
+      globalObject: 'this'
     },
     plugins: [
       new webpack.DefinePlugin({
