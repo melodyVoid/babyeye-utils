@@ -14,7 +14,7 @@ document.body.style.height = '2000px'
 console.dir(oDiv)
 
 document.onclick = () => {
-  bUtils.scrollTo(oDiv)
+  bUtils.scrollTo(oDiv, 8)
 }
 
 const obj = {
