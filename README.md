@@ -1,4 +1,4 @@
-<center> ![Cm2kes.png](https://s1.ax1x.com/2018/04/17/Cm2kes.png) </center>
+![Cm2kes.png](https://s1.ax1x.com/2018/04/17/Cm2kes.png)
 
 # babyeye-utils
 
