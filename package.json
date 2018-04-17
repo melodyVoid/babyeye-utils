@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/melodyVoid/babyeye-utils.git"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [
     "utility",
     "library",
