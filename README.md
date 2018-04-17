@@ -27,7 +27,7 @@ bUtils[method](...args)
 bUtils.parseTime(new Date())
 ```
 
-#API
+# API
 
 ## 1. 时间函数
 
@@ -43,11 +43,11 @@ bUtils.parseTime(new Date())
 
 `time`
 
-​        需要格式化的时间对象，或者时间戳
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要格式化的时间对象，或者时间戳
 
 `format`
 
-​        可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
 
 |  y   |  m   |  d   |  h   |  i   |  s   |  a   |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -55,7 +55,7 @@ bUtils.parseTime(new Date())
 
 #### 返回值 [return value]
 
-​        格式化后的日期字符串
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格式化后的日期字符串
 
 #### 例子 [examples]
 
