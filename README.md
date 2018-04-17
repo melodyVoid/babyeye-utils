@@ -43,11 +43,11 @@ bUtils.parseTime(new Date())
 
 `time`
 
-    需要格式化的时间对象，或者时间戳
+ 	需要格式化的时间对象，或者时间戳
 
 `format`
 
-    可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
+​	可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
 
 |  y   |  m   |  d   |  h   |  i   |  s   |  a   |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -55,15 +55,18 @@ bUtils.parseTime(new Date())
 
 ##### 返回值 [return value]
 
-    格式化后的日期字符串
+​	格式化后的日期字符串
 
 ##### 例子 [examples]
 
 ```js
 const date = new Date();
 const timeStamp = new Date().getTime();
+
 bUtils.parseTime(date);  // 2018-04-17 11:42:37
 bUtils.parseTime(date, '{y}-{m}-{d} {a}'); // 2018-04-17 星期二
 bUtils.parseTime(timeStamp, '{h}:{i}:{s}'); // 11:47:10
 ```
+
+
 
