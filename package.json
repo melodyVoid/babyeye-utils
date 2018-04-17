@@ -1,6 +1,6 @@
 {
   "name": "babyeye-utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "utility library for babyeye",
   "main": "dist/babyeye-utils.js",
   "scripts": {
