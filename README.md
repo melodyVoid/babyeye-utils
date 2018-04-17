@@ -27,37 +27,37 @@ bUtils[method](...args)
 bUtils.parseTime(new Date())
 ```
 
-## API
+#API
 
-### 1. 时间函数
+## 1. 时间函数
 
-#### 1.1 格式化时间
+### 1.1 格式化时间
 
-##### 用法 [Syntax]
+#### 用法 [Syntax]
 
 > ```js
 > parseTime(time[, format])
 > ```
 
-##### 参数 [Parameters]
+#### 参数 [Parameters]
 
 `time`
 
- 	需要格式化的时间对象，或者时间戳
+​        需要格式化的时间对象，或者时间戳
 
 `format`
 
-​	可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
+​        可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
 
 |  y   |  m   |  d   |  h   |  i   |  s   |  a   |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |  年  |  月  |  日  |  时  |  分  |  秒  | 星期 |
 
-##### 返回值 [return value]
+#### 返回值 [return value]
 
-​	格式化后的日期字符串
+​        格式化后的日期字符串
 
-##### 例子 [examples]
+#### 例子 [examples]
 
 ```js
 const date = new Date();
