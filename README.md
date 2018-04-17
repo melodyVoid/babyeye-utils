@@ -33,6 +33,10 @@ bUtils.parseTime(new Date())
 
 ### 1.1 格式化时间
 
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于将时间对象或者时间戳格式化为指定形式的字符串
+
 #### 用法 [Syntax]
 
 > ```js
@@ -68,5 +72,42 @@ bUtils.parseTime(date, '{y}-{m}-{d} {a}'); // 2018-04-17 星期二
 bUtils.parseTime(timeStamp, '{h}:{i}:{s}'); // 11:47:10
 ```
 
+## 2. 数组函数
 
+### 2.1 拆分数组
+
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组按照指定长度（第二个参数）拆分成若干数组
+
+#### 用法 [Syntax]
+
+> ```js
+> chunkArray(arr, size)
+> ```
+
+#### 参数 [Parameters]
+
+`arr`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; array 类型，被拆分的数组
+
+`size`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number 类型，表示按照什么长度来拆分数组
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二维数组，每一项是被拆分后的数组
+
+#### 例子 [examples]
+
+```js
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+bUtils.chunkArray(arr, 2) // [[1, 2], [3, 4], [5, 6], [7, 8]]
+bUtils.chunkArray(arr, 3) // [[1, 2, 3], [4, 5, 6], [7, 8]]
+bUtils.chunkArray(arr, 5) // [[1, 2, 3, 4, 5], [6, 7, 8]]
+bUtils.chunkArray(arr, 9) // [1, 2, 3, 4, 5, 6, 7, 8]
+```
 
