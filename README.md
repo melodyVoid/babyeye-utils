@@ -31,7 +31,7 @@ bUtils.parseTime(new Date())
 
 ## 1. 时间函数
 
-### 1.1 格式化时间
+### 1.1 parseTime 格式化时间
 
 #### 描述 [description]
 
@@ -74,7 +74,7 @@ bUtils.parseTime(timeStamp, '{h}:{i}:{s}'); // 11:47:10
 
 ## 2. 数组函数
 
-### 2.1 拆分数组
+### 2.1 chunkArray 拆分数组
 
 #### 描述 [description]
 
@@ -109,5 +109,94 @@ bUtils.chunkArray(arr, 2) // [[1, 2], [3, 4], [5, 6], [7, 8]]
 bUtils.chunkArray(arr, 3) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 bUtils.chunkArray(arr, 5) // [[1, 2, 3, 4, 5], [6, 7, 8]]
 bUtils.chunkArray(arr, 9) // [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+## 3. 对象函数
+
+### 3.1 cleanObj 清空对象
+
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于清空一个对象，第二个参数是一个数组，里面存放不想被清空的对象的 `key`
+
+#### 用法 [Syntax]
+
+> ```js
+> cleanObj(obj[, keep])
+> ```
+
+#### 参数 [Parameters]
+
+`obj`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object 类型，想要清空的对象
+
+`keep`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; array 类型，需要被保留的对象的键
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 返回被清空或被部分清空的对象
+
+#### 例子 [examples]
+
+```js
+const obj = {
+  name: 'jack',
+  age: 18,
+  gender: 'male'
+};
+
+bUtils.cleanObj(obj);   // { name: '', age: '', gender: '' }
+bUtils.cleanObj(obj, ['name']) // { name: 'jack', age: '', gender: '' }
+```
+
+## 4. DOM函数
+
+### 4.1 scrollTo 滚动
+
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使 document 滚动到某一元素的位置，可用于滚动到指定锚点、回到顶部等。
+
+#### 用法 [Syntax]
+
+> ```js
+> scrollTo(element[, ratio])
+> ```
+
+#### 参数 [Parameters]
+
+`element`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object 类型，DOM元素，表示 document 滚动到该元素的位置
+
+`ratio`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number类型，缓动系数，取值在 0 ~ 1 之间，值越大，滚动速度越快，缺省值为 0.1
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无返回值
+
+#### 例子 [examples]
+
+```html
+<button id="btn">滚动到锚点</button>
+...
+...
+<div class="box">
+  <div id="anchor"></div>
+</div>
+```
+
+```js
+const oBtn = documemt.getElementById('btn');
+const oAnchor = document.getElementById('anchor');
+
+oBtn.addEvementListener('click', () => {
+  bUtils.scrollTo(oAnchor);
+})
 ```
 

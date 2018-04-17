@@ -19,7 +19,7 @@ document.onclick = () => {
 
 const obj = {
   name: 'jack',
-  age: 28,
+  age: 18,
   gender: 'male'
 }
 
