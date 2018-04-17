@@ -1,6 +1,6 @@
-import bu from '../src/index'
+import bUtils from '../src/index'
 
-console.log(bu)
+console.log(bUtils)
 
 const oDiv = document.createElement('div')
 
@@ -14,5 +14,14 @@ document.body.style.height = '2000px'
 console.dir(oDiv)
 
 document.onclick = () => {
-  bu.scrollTo(oDiv)
+  bUtils.scrollTo(oDiv)
 }
+
+const obj = {
+  name: 'jack',
+  age: 28,
+  gender: 'male'
+}
+
+console.log(bUtils.cleanObj(obj, ['name']))
+

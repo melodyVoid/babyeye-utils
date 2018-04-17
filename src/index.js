@@ -1,6 +1,7 @@
 import * as date from './date'
 import * as array from './array'
 import * as dom from './dom'
+import * as object from './object'
 
 const utils = {
   add(...items) {
@@ -8,7 +9,8 @@ const utils = {
   },
   ...date,
   ...array,
-  ...dom
+  ...dom,
+  ...object
 }
 
 if (!window.bu) {
