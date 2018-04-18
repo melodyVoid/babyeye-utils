@@ -1,0 +1,11 @@
+- 开始使用
+  - [安装并使用](install.md)
+- API
+  - 时间函数
+    - [parseTime 格式化时间](date/parseTime.md)
+  - 数组函数
+    - [chunkArray 拆分数组](array/chunkArray.md)
+  - 对象函数
+    - [cleanObj 清空对象](object/cleanObj.md)
+  - DOM 函数
+    - [scrollTo 滚动](dom/scrollTo.md)

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>babyeye-utils - utility library for babyeye</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="utility library for babyeye">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'babyeye-utils',
+      repo: 'https://github.com/melodyVoid/babyeye-utils',
+      coverpage: true,
+      themeColor: '#53a8e7',
+      loadSidebar: true,
+      // subMaxLevel: 5,
+      MaxLevel: 10,
+      auto2top: true,
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: '搜索',
+        // 支持本地化
+        // placeholder: {
+        //   '/zh-cn/': '搜索',
+        //   '/': 'Type to search'
+        // },
+
+        noData: '找不到结果',
+
+        // 支持本地化
+        // noData: {
+        //   '/zh-cn/': '找不到结果',
+        //   '/': 'No Results'
+        // },
+
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2
+      }
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+</body>
+</html>
