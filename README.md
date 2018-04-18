@@ -2,6 +2,10 @@
 
 # babyeye-utils
 
+## 文档 [documentation]
+
+<https://melodyvoid.github.io/babyeye-utils>
+
 ## 项目描述 [Description]
 
 babyeye-utils 是对业务中常用方法的总结，方便以后在其他项目中使用。主要内容包含：时间类、数组类、DOM类、对象类…内容。
