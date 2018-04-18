@@ -7,9 +7,11 @@ function scrollTo(element, ratio = 0.1) {
   timer = setInterval(() => {
     scrollTop += (top - scrollTop) * ratio
     document.documentElement.scrollTop = scrollTop
+    document.body.scrollTop = scrollTop
     if (scrollTop < top ? Math.round(scrollTop) >= top : Math.round(scrollTop) <= top) {
       clearInterval(timer)
       document.documentElement.scrollTop = top
+      document.body.scrollTop = top
     }
   }, 10)
 }

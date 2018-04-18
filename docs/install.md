@@ -19,7 +19,7 @@ yarn add babyeye-utils
 ```js
 import bUtils from 'babyeye-utils'
 // or
-const bUtils = reqiure('babyeye-utils')
+const bUtils = reqiure('babyeye-utils').default
 
 bUtils[method](...args)
 
