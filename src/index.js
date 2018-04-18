@@ -13,14 +13,5 @@ const utils = {
   ...object
 }
 
-const root = (typeof self === 'object' && self.self === self && self) ||
-        (typeof global === 'object' && global.global === global && global) ||
-        this || {}
-if (!root.bUtils) {
-  root.bUtils = utils
-}
-
 export default utils
 
-// export const parseTime = date.parseTime
-// export const chunkArray = array.chunkArray
