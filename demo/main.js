@@ -1,5 +1,5 @@
-// import bUtils from '../src/index'
-const bUtils = require('../dist/babyeye-utils')
+import bUtils from '../src/index'
+// const bUtils = require('../dist/babyeye-utils').default
 
 console.log(bUtils)
 
@@ -28,3 +28,20 @@ console.log(bUtils)
 
 // const arr = [1, 2, 3, 4, 5, 6, 7]
 // console.log(bUtils.chunkArray(arr, 9))
+
+const obj = {
+  a: 1,
+  b: function() {
+    return this.a + 1
+  },
+  c: { x: 2 },
+  d: null
+}
+
+const arr = [1, { b: 2 }]
+
+const cloneObj = bUtils.deepClone(obj)
+const cloneArr = bUtils.deepClone(arr)
+
+console.log(cloneObj)
+console.log(cloneArr)

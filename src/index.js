@@ -12,6 +12,6 @@ const utils = {
   ...dom,
   ...object
 }
-
+if (!window.bUtils) window.bUtils = utils
 export default utils
 

@@ -7,5 +7,6 @@
     - [chunkArray 拆分数组](array/chunkArray.md)
   - 对象函数
     - [cleanObj 清空对象](object/cleanObj.md)
+    - [deepClone 深复制](object/deepClone.md)
   - DOM 函数
     - [scrollTo 滚动](dom/scrollTo.md)
