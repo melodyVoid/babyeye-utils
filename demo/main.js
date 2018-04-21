@@ -46,7 +46,11 @@ console.log(bUtils)
 // console.log(cloneObj)
 // console.log(cloneArr)
 
-const arr = [1, 2, 3, 3, 2, 4]
-const uniqueArr = bUtils.unique(arr)
-console.log(uniqueArr)
+// const arr = [1, 2, 3, 3, 2, 4]
+// const uniqueArr = bUtils.unique(arr)
+// console.log(uniqueArr)
+// console.log(arr)
+
+const arr = bUtils.range(-1, -10)
 console.log(arr)
+

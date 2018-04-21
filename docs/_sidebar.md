@@ -6,6 +6,7 @@
   - 数组函数
     - [chunkArray 拆分数组](array/chunkArray.md)
     - [unique 数组去重](array/unique.md)
+    - [range 生成整数数组](array/range.md)
   - 对象函数
     - [cleanObj 清空对象](object/cleanObj.md)
     - [deepClone 深复制](object/deepClone.md)
