@@ -12,3 +12,5 @@
     - [deepClone 深复制](object/deepClone.md)
   - DOM 函数
     - [scrollTo 滚动](dom/scrollTo.md)
+  - 节流与防抖
+    - [debounce 防抖](function/debounce.md)

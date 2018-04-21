@@ -14,7 +14,7 @@
 
 `arr`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; array 类型，需要去重的数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，需要去重的数组
 
 #### 返回值 [return value]
 
@@ -28,3 +28,4 @@ const uniqueArr = bUtils.unique(arr)
 uniqueArr // [1, 2, 3, 4]
 arr // [1, 2, 3, 3, 2, 4]
 ```
+

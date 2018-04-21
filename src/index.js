@@ -2,6 +2,7 @@ import * as date from './date'
 import * as array from './array'
 import * as dom from './dom'
 import * as object from './object'
+import * as fn from './function'
 
 const utils = {
   add(...items) {
@@ -10,7 +11,8 @@ const utils = {
   ...date,
   ...array,
   ...dom,
-  ...object
+  ...object,
+  ...fn
 }
 if (!window.bUtils) window.bUtils = utils
 export default utils

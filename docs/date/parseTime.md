@@ -18,7 +18,7 @@
 
 `format`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可选，字符串类型，缺省为 `'{y}-{m}-{d} {h}:{i}:{s}'`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**string** 类型，可选，缺省值为 `'{y}-{m}-{d} {h}:{i}:{s}'`
 
 |  y   |  m   |  d   |  h   |  i   |  s   |  a   |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
