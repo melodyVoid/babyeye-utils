@@ -19,7 +19,5 @@
   - 节流与防抖
 
     - [throttle 节流](function/throttle.md)
-
-
     - [debounce 防抖](function/debounce.md)
 
