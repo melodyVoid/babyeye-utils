@@ -14,6 +14,5 @@ const utils = {
   ...object,
   ...fn
 }
-if (!window.bUtils) window.bUtils = utils
 export default utils
 

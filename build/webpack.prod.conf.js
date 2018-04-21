@@ -12,7 +12,7 @@ module.exports = {
       path: resolve('dist'),
       filename: 'babyeye-utils.js',
       publicPath: '/dist/',
-      library: 'babyeye-utils',
+      library: 'bUtils',
       libraryTarget: 'umd',
       umdNamedDefine: true,
       globalObject: 'this'
