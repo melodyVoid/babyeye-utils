@@ -22,7 +22,7 @@
 
 `immediate`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **boolean** 类型，表示是否立即执行，如果为 `true`，`debounce` 会在 `wait` 时间间隔的开始调用这个函数 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **boolean** 类型，可选，缺省值为 false，表示是否立即执行，如果为 `true`，`debounce` 会在 `wait` 时间间隔的开始调用这个函数 
 
 #### 返回值 [return value]
 
