@@ -3,14 +3,23 @@
 - API
   - 时间函数
     - [parseTime 格式化时间](date/parseTime.md)
+
   - 数组函数
     - [chunkArray 拆分数组](array/chunkArray.md)
     - [unique 数组去重](array/unique.md)
     - [range 生成整数数组](array/range.md)
+
   - 对象函数
     - [cleanObj 清空对象](object/cleanObj.md)
     - [deepClone 深复制](object/deepClone.md)
+
   - DOM 函数
     - [scrollTo 滚动](dom/scrollTo.md)
+
   - 节流与防抖
+
+    - [throttle 节流](function/throttle.md)
+
+
     - [debounce 防抖](function/debounce.md)
+

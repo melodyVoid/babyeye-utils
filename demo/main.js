@@ -64,11 +64,19 @@ function foo(e) {
   return 111
 }
 
-const debounceAction = bUtils.debounce(foo, 1000, true)
-oBox.onmousemove = debounceAction
+// const debounceAction = bUtils.debounce(foo, 1000, true)
+// oBox.onmousemove = debounceAction
+
+// oBtn.onclick = () => {
+//   debounceAction.cancel()
+// }
+// bUtils.debounce(foo, 1000, true)().then(res => console.log(res))
+
+const throttleAction = bUtils.throttle(foo, 3000)
+oBox.onmousemove = throttleAction
 
 oBtn.onclick = () => {
-  debounceAction.cancel()
+  throttleAction.cancel()
 }
-bUtils.debounce(foo, 1000, true)().then(res => console.log(res))
 
+// throttleAction().then(res => console.log(res))
