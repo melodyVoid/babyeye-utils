@@ -54,15 +54,15 @@ console.log(bUtils)
 // const arr = bUtils.range(-1, -10)
 // console.log(arr)
 
-let count = 0
-const oBox = document.getElementById('box')
-const oBtn = document.getElementById('btn')
-function foo(e) {
-  console.log(e)
-  console.log(this)
-  oBox.innerHTML = count++
-  return 111
-}
+// let count = 0
+// const oBox = document.getElementById('box')
+// const oBtn = document.getElementById('btn')
+// function foo(e) {
+//   console.log(e)
+//   console.log(this)
+//   oBox.innerHTML = count++
+//   return 111
+// }
 
 // const debounceAction = bUtils.debounce(foo, 1000, true)
 // oBox.onmousemove = debounceAction
@@ -72,11 +72,14 @@ function foo(e) {
 // }
 // bUtils.debounce(foo, 1000, true)().then(res => console.log(res))
 
-const throttleAction = bUtils.throttle(foo, 3000)
-oBox.onmousemove = throttleAction
+// const throttleAction = bUtils.throttle(foo, 3000)
+// oBox.onmousemove = throttleAction
 
-oBtn.onclick = () => {
-  throttleAction.cancel()
-}
+// oBtn.onclick = () => {
+//   throttleAction.cancel()
+// }
 
 // throttleAction().then(res => console.log(res))
+const url = 'http://url.com/page?name=Adam&surname=Smith'
+
+console.log(bUtils.getUrlParams(url))

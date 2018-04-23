@@ -3,6 +3,7 @@ import * as array from './array'
 import * as dom from './dom'
 import * as object from './object'
 import * as fn from './function'
+import * as url from './url'
 
 const utils = {
   add(...items) {
@@ -12,7 +13,8 @@ const utils = {
   ...array,
   ...dom,
   ...object,
-  ...fn
+  ...fn,
+  ...url
 }
 export default utils
 
