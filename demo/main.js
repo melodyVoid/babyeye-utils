@@ -80,6 +80,6 @@ console.log(bUtils)
 // }
 
 // throttleAction().then(res => console.log(res))
-const url = 'http://url.com/page?name=Adam&surname=Smith'
+// const url = 'http://url.com/page?name=Adam&surname=Smith'
 
-console.log(bUtils.getUrlParams(url))
+// console.log(bUtils.getUrlParams(url))
