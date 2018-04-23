@@ -17,7 +17,8 @@
     - [scrollTo 滚动](dom/scrollTo.md)
 
   - 节流与防抖
-
     - [throttle 节流](function/throttle.md)
     - [debounce 防抖](function/debounce.md)
+  - URL
+    - [getUrlParams url 参数转对象](url/getUrlParams.md)
 
