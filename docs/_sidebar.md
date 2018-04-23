@@ -1,5 +1,6 @@
 - 开始使用
   - [安装并使用](install.md)
+  
 - API
   - 时间函数
     - [parseTime 格式化时间](date/parseTime.md)
@@ -19,6 +20,6 @@
   - 节流与防抖
     - [throttle 节流](function/throttle.md)
     - [debounce 防抖](function/debounce.md)
-  - URL
-    - [getUrlParams url 参数转对象](url/getUrlParams.md)
 
+  - URL
+    - [getUrlParams 转 url 参数为对象](url/getUrlParams.md)
