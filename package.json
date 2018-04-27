@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/melodyVoid/babyeye-utils/issues"
   },
-  "homepage": "https://github.com/melodyVoid/babyeye-utils#readme",
+  "homepage": "https://melodyvoid.github.io/babyeye-utils",
   "dependencies": {
     "babel-runtime": "^6.26.0"
   },
