@@ -12,14 +12,15 @@
 
   - 对象函数
     - [cleanObj 清空对象](object/cleanObj.md)
-    - [deepClone 深复制](object/deepClone.md)
+    - [deepClone 深复制](object/deepClone.md) 
 
   - DOM 函数
     - [scrollTo 滚动](dom/scrollTo.md)
 
-  - 节流与防抖
+  - 函数相关
     - [throttle 节流](function/throttle.md)
     - [debounce 防抖](function/debounce.md)
+    - [promisify Promise化](function/promisify.md)
 
   - URL
     - [getUrlParams 转 url 参数为对象](url/getUrlParams.md)

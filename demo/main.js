@@ -83,3 +83,11 @@ console.log(bUtils)
 // const url = 'http://url.com/page?name=Adam&surname=Smith'
 
 // console.log(bUtils.getUrlParams(url))
+
+function delay(time, cb) {
+  setTimeout(cb, time)
+}
+
+const newDelay = bUtils.promisity(delay)
+
+newDelay(3000).then(() => console.log('3s后执行'))
