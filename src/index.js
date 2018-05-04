@@ -4,6 +4,7 @@ import * as dom from './dom'
 import * as object from './object'
 import * as fn from './function'
 import * as url from './url'
+import * as string from './string'
 
 const utils = {
   add(...items) {
@@ -14,7 +15,8 @@ const utils = {
   ...dom,
   ...object,
   ...fn,
-  ...url
+  ...url,
+  ...string
 }
 export default utils
 

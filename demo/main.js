@@ -84,10 +84,18 @@ console.log(bUtils)
 
 // console.log(bUtils.getUrlParams(url))
 
-function delay(time, cb) {
-  setTimeout(cb, time)
-}
+// function delay(time, cb) {
+//   setTimeout(cb, time)
+// }
 
-const newDelay = bUtils.promisity(delay)
+// const newDelay = bUtils.promisity(delay)
 
-newDelay(3000).then(() => console.log('3s后执行'))
+// newDelay(3000).then(() => console.log('3s后执行'))
+
+const before = 'someCamelCaseName'
+const after = bUtils.fromCamelCase(before)
+const after2 = bUtils.fromCamelCase(before, ' ')
+const after3 = bUtils.fromCamelCase(before, '_')
+console.log(after)
+console.log(after2)
+console.log(after3)
