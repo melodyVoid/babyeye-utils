@@ -92,10 +92,25 @@ console.log(bUtils)
 
 // newDelay(3000).then(() => console.log('3s后执行'))
 
-const before = 'someCamelCaseName'
-const after = bUtils.fromCamelCase(before)
-const after2 = bUtils.fromCamelCase(before, ' ')
-const after3 = bUtils.fromCamelCase(before, '_')
+// const before = 'someCamelCaseName'
+// const after = bUtils.fromCamelCase(before)
+// const after2 = bUtils.fromCamelCase(before, ' ')
+// const after3 = bUtils.fromCamelCase(before, '_')
+// console.log(after)
+// console.log(after2)
+// console.log(after3)
+
+const before = 'some words with spaces'
+const before2 = 'some_words_with_underscore'
+const before3 = 'some-javascript-property'
+const before4 = 'some-mixed_string demo'
+
+const after = bUtils.toCamelCase(before)
+const after2 = bUtils.toCamelCase(before2, false)
+const after3 = bUtils.toCamelCase(before3)
+const after4 = bUtils.toCamelCase(before4)
+
 console.log(after)
 console.log(after2)
 console.log(after3)
+console.log(after4)

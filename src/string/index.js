@@ -1,5 +1,7 @@
 import fromCamelCase from './fromCamelCase'
+import toCamelCase from './toCamelCase'
 
 export {
-  fromCamelCase
+  fromCamelCase,
+  toCamelCase
 }
