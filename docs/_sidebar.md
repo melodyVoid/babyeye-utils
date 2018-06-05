@@ -24,6 +24,7 @@
 
   - URL
     - [getUrlParams 转 url 参数为对象](url/getUrlParams.md)
+    - [addParamsToUrl 给 url 拼接参数](url/addParamsToUrl.md)
 
   - 字符串函数
     - [fromCamelCase 驼峰转其他](string/fromCamelCase.md)
