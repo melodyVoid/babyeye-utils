@@ -118,6 +118,6 @@ console.log(after4)
 const baseUrl = 'https://www.babyeye.com?age=18'
 const url = bUtils.addParamsToUrl(baseUrl, {
   username: 'dylan',
-  gender: 'male'
+  gender: 0
 })
 console.log(url)
