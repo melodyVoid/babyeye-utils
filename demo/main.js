@@ -124,3 +124,11 @@ console.log(url, 'addParamsToUrl')
 const urlParam = bUtils.getParam(baseUrl, 'age')
 console.log(urlParam, 'getParam')
 console.log(bUtils.getParam(baseUrl), 'getParam without key')
+
+console.log(bUtils.is360())
+
+console.log(bUtils.getCookie('pass'))
+
+console.log(bUtils.isMobile())
+
+console.log(bUtils.getParam('https://www.babyeye.com?age=18', 'age'))

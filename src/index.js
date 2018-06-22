@@ -18,7 +18,7 @@ const utils = {
   ...object,
   ...string,
   ...url,
-  ...date,
+  ...date
 }
 export default utils
 
