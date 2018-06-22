@@ -4,10 +4,10 @@
 - API
 
   - 浏览器函数
-    - [is360 判断360](bom/browser.md#is360)
-    - [getCookie cookie取值](bom/browser.md#getCookie)
-    - [isMobile 判断移动设备](bom/browser.md#isMobile)
-    - [getParam url取参](bom/browser.md#getParam)
+    - [is360 判断360](bom/is360.md)
+    - [isMobile 判断移动设备](bom/isMobile.md)
+    - [getCookie cookie取值](bom/getCookie.md)
+    - [getParam url取参](bom/getParam.md)
 
   - DOM 函数
     - [scrollTo 滚动](dom/scrollTo.md)

@@ -127,7 +127,7 @@ console.log(bUtils.getParam(baseUrl), 'getParam without key')
 
 console.log(bUtils.is360())
 
-console.log(bUtils.getCookie('pass'))
+console.log(bUtils.getCookie('pass1'))
 
 console.log(bUtils.isMobile())
 
