@@ -120,4 +120,7 @@ const url = bUtils.addParamsToUrl(baseUrl, {
   username: 'dylan',
   gender: 0
 })
-console.log(url)
+console.log(url, 'addParamsToUrl')
+const urlParam = bUtils.getParam(baseUrl, 'age')
+console.log(urlParam, 'getParam')
+console.log(bUtils.getParam(baseUrl), 'getParam without key')
