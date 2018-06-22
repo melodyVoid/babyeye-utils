@@ -1,22 +1,24 @@
-import * as date from './date'
-import * as array from './array'
+import * as bom from './bom'
 import * as dom from './dom'
-import * as object from './object'
 import * as fn from './function'
-import * as url from './url'
+import * as array from './array'
+import * as object from './object'
 import * as string from './string'
+import * as url from './url'
+import * as date from './date'
 
 const utils = {
   add(...items) {
     return [...items].reduce((prev, curr) => (prev += curr), 0)
   },
-  ...date,
-  ...array,
+  ...bom,
   ...dom,
-  ...object,
   ...fn,
+  ...array,
+  ...object,
+  ...string,
   ...url,
-  ...string
+  ...date,
 }
 export default utils
 
