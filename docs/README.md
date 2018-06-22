@@ -33,169 +33,179 @@ bUtils.parseTime(new Date())
 
 # API
 
-## 1. 时间函数
+## 1. 浏览器函数
 
-### 1.1 parseTime 格式化时间
+### 1.1 is360 判断浏览器是否为 360 浏览器
 
 #### 描述 [description]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于将时间对象或者时间戳格式化为指定形式的字符串
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于判断浏览器是否为 360 浏览器
 
 #### 用法 [Syntax]
 
 > ```js
-> parseTime(time[, format])
+> is360()
 > ```
 
 #### 参数 [Parameters]
 
-`time`
-
-&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要格式化的时间对象，或者时间戳
-
-`format`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **string** 类型，可选，缺省值为 `'{y}-{m}-{d} {h}:{i}:{s}'`
-
-|  y   |  m   |  d   |  h   |  i   |  s   |  a   |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-|  年  |  月  |  日  |  时  |  分  |  秒  | 星期 |
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**无**
 
 #### 返回值 [return value]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格式化后的日期字符串
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布尔值，是360浏览器为 `true`，否则为 `false`。
 
 #### 例子 [examples]
 
 ```js
-const date = new Date();
-const timeStamp = new Date().getTime();
-
-bUtils.parseTime(date);  // 2018-04-17 11:42:37
-bUtils.parseTime(date, '{y}-{m}-{d} {a}'); // 2018-04-17 星期二
-bUtils.parseTime(timeStamp, '{h}:{i}:{s}'); // 11:47:10
+// 用 Chrome 测试。
+bUtils.is360(); // false
 ```
 
-## 2. 数组函数
-
-### 2.1 chunkArray 拆分数组
+### 1.2 isMobile 判断是否为移动设备
 
 #### 描述 [description]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组按照指定长度（第二个参数）拆分成若干数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于判断该设备是否为移动设备
 
 #### 用法 [Syntax]
 
 > ```js
-> chunkArray(arr, size)
+> isMobile()
 > ```
 
 #### 参数 [Parameters]
 
-`arr`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，被拆分的数组
-
-`size`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，表示按照什么长度来拆分数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **无**
 
 #### 返回值 [return value]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二维数组，每一项是被拆分后的数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 布尔值，是移动设备为 `true`，否则为 `false`。
 
 #### 例子 [examples]
 
 ```js
-const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// Chrome 
+bUtils.isMobile()  // false
 
-bUtils.chunkArray(arr, 2) // [[1, 2], [3, 4], [5, 6], [7, 8]]
-bUtils.chunkArray(arr, 3) // [[1, 2, 3], [4, 5, 6], [7, 8]]
-bUtils.chunkArray(arr, 5) // [[1, 2, 3, 4, 5], [6, 7, 8]]
-bUtils.chunkArray(arr, 9) // [1, 2, 3, 4, 5, 6, 7, 8]
+// Chrome 打开移动设备模拟器
+bUtils.isMobile()  // true
 ```
 
-### 2.2 unique 数组去重
+### 1.3 getCookie 获取 cookie 中的值
 
 #### 描述 [description]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组中的重复元素去掉
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于获取 cookie 中的值。
 
 #### 用法 [Syntax]
 
 > ```js
-> unique(arr)
+> getCookie(name)
 > ```
 
 #### 参数 [Parameters]
 
-`arr`
+`name`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，需要去重的数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取 cookie 的 name
 
 #### 返回值 [return value]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 去重后的数组，不会改变原数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取到的 cookie 中的值，若没有则返回 `undefined`。
 
 #### 例子 [examples]
 
 ```js
-const arr = [1, 2, 3, 3, 2, 4]
-const uniqueArr = bUtils.unique(arr)
-uniqueArr // [1, 2, 3, 4]
-arr // [1, 2, 3, 3, 2, 4]
+// cookie 里有 uid
+bUtils.getCookie('uid'); // '333'
+
+// cookie 里没有 hid
+bUtils.getCookie('hid'); // undefined
 ```
 
-### 2.3 range 生成整数数组
+### 1.4 getParam 获取 url 中的参数值
 
 #### 描述 [description]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用来创建 `start` 到 `stop` （不包括`stop`）整数数组，方便用数组的方法。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于获取 url 中的参数的值。
 
 #### 用法 [Syntax]
 
 > ```js
-> range([start, ]stop[, step])
+> getParam(url, name)
 > ```
 
 #### 参数 [Parameters]
 
-`start`
+`url`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，起始值，可选，缺省值为 0
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数值的 url 
 
-`stop`
+`name`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，结束值，生成的数组中不包含结束值
-
-`step`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，可选，若 `start` < `stop`，默认步长为 1；若 `start` > `stop`，默认步长为 -1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数值的 name
 
 #### 返回值 [return value]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 生成的整数列表数组
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取到的参数值
 
 #### 例子 [examples]
 
 ```js
-bUtils.range(5);
-// [0, 1, 2, 3, 4]
+const url = 'http://url.com/page?name=Dylan&age=18';
 
-bUtils.range(1, 5);
-// [1, 2, 3, 4]
+bUtils.getParam(url, 'name');  // 'Dylan'
+bUtils.getParam(url, 'age');   // '18'
+bUtils.getParam(url, 'gender');// undefined
+```
 
-bUtils.range(0, 20, 5);
-// [0, 5, 10, 15]
+## 2. DOM函数
 
-bUtils.range(0, -5);
-// [0, -1, -2, -3, -4]
+### 2.1 scrollTo 滚动
 
-bUtils.range(0, -5, -1);
-// [0, -1, -2, -3, -4]
+#### 描述 [description]
 
-bUtils.range(0)
-// []
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使 document 滚动到某一元素的位置，可用于滚动到指定锚点、回到顶部等。
+
+#### 用法 [Syntax]
+
+> ```js
+> scrollTo(element[, ratio])
+> ```
+
+#### 参数 [Parameters]
+
+`element`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **object** 类型，DOM元素，表示 `document` 滚动到该元素的位置
+
+`ratio`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，缓动系数，取值在 0 ~ 1 之间，值越大，滚动速度越快，缺省值为 0.1
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无返回值
+
+#### 例子 [examples]
+
+```html
+<button id="btn">滚动到锚点</button>
+...
+...
+<div class="box">
+  <div id="anchor"></div>
+</div>
+```
+
+```js
+const oBtn = documemt.getElementById('btn');
+const oAnchor = document.getElementById('anchor');
+
+oBtn.addEvementListener('click', () => {
+  bUtils.scrollTo(oAnchor);
+})
 ```
 
 ## 3. 对象函数
@@ -293,57 +303,9 @@ cloneArr
 // [1, { b: 2 }]
 ```
 
-## 4. DOM函数
+## 4. 函数相关
 
-### 4.1 scrollTo 滚动
-
-#### 描述 [description]
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使 document 滚动到某一元素的位置，可用于滚动到指定锚点、回到顶部等。
-
-#### 用法 [Syntax]
-
-> ```js
-> scrollTo(element[, ratio])
-> ```
-
-#### 参数 [Parameters]
-
-`element`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **object** 类型，DOM元素，表示 `document` 滚动到该元素的位置
-
-`ratio`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，缓动系数，取值在 0 ~ 1 之间，值越大，滚动速度越快，缺省值为 0.1
-
-#### 返回值 [return value]
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无返回值
-
-#### 例子 [examples]
-
-```html
-<button id="btn">滚动到锚点</button>
-...
-...
-<div class="box">
-  <div id="anchor"></div>
-</div>
-```
-
-```js
-const oBtn = documemt.getElementById('btn');
-const oAnchor = document.getElementById('anchor');
-
-oBtn.addEvementListener('click', () => {
-  bUtils.scrollTo(oAnchor);
-})
-```
-
-## 5. 函数相关
-
-### 5.1 throttle 函数节流
+### 4.1 throttle 函数节流
 
 #### 描述 [description]
 
@@ -430,7 +392,7 @@ oBtn.onclick = () => {
 // throttleAction().then(res => console.log(res))  // 获取函数的返回值
 ```
 
-### 5.2 debounce 函数防抖
+### 4.2 debounce 函数防抖
 
 #### 描述 [description]
 
@@ -508,7 +470,7 @@ oBtn.onclick = () => {
 bUtils.debounce(foo, 1000, true)().then(res => console.log(res)); // 获取函数的返回值
 ```
 
-### 5.3 promisify 函数 Promise 化
+### 4.3 promisify 函数 Promise 化
 
 #### 描述 [description]
 
@@ -548,86 +510,131 @@ const newDelay = bUtils.promisity(delay)
 newDelay(3000).then(() => console.log('3s后执行'))
 ```
 
-## 6. URL
+## 5. 数组函数
 
-### 6.1 getUrlParams 将 url 参数转为对象
+### 5.1 chunkArray 拆分数组
 
 #### 描述 [description]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将 url 的参数转为对象的形式
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组按照指定长度（第二个参数）拆分成若干数组
 
 #### 用法 [Syntax]
 
 > ```js
-> getUrlParams(url)
+> chunkArray(arr, size)
 > ```
 
 #### 参数 [Parameters]
 
-`url`
+`arr`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数对象的 url 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，被拆分的数组
+
+`size`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，表示按照什么长度来拆分数组
 
 #### 返回值 [return value]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 参数对象
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二维数组，每一项是被拆分后的数组
 
 #### 例子 [examples]
 
 ```js
-const url = 'http://url.com/page?name=Adam&age=18';
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
-bUtils.getUrlParams(url);
-// { name: 'Adam', age: 18 }
+bUtils.chunkArray(arr, 2) // [[1, 2], [3, 4], [5, 6], [7, 8]]
+bUtils.chunkArray(arr, 3) // [[1, 2, 3], [4, 5, 6], [7, 8]]
+bUtils.chunkArray(arr, 5) // [[1, 2, 3, 4, 5], [6, 7, 8]]
+bUtils.chunkArray(arr, 9) // [1, 2, 3, 4, 5, 6, 7, 8]
 ```
-### 6.2 addParamsToUrl 给 url 拼接参数
+
+### 5.2 unique 数组去重
 
 #### 描述 [description]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于给 url 添加 search 部分
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组中的重复元素去掉
 
 #### 用法 [Syntax]
 
 > ```js
-> addParamsToUrl(baseUrl, params)
+> unique(arr)
 > ```
 
 #### 参数 [Parameters]
 
-`baseUrl`
+`arr`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要添加 search 的 url
-
-`params`
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object 类型，表示参数对象，以键值对存放
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，需要去重的数组
 
 #### 返回值 [return value]
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拼接后的 url
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 去重后的数组，不会改变原数组
 
 #### 例子 [examples]
 
 ```js
-const baseUrl = 'https://www.babyeye.com';
-
-bUtils.addParamsToUrl(baseUrl, {
-  username: 'dylan',
-  gender: 'male'
-});
-// https://www.babyeye.com?username=dylan&gender=male
-
-const baseUrl2 = 'https://www.babyeye.com?age=18';
-bUtils.addParamsToUrl(baseUrl2, {
-  username: 'dylan',
-  gender: 'male'
-});
-// https://www.babyeye.com?age=18&username=dylan&gender=male
+const arr = [1, 2, 3, 3, 2, 4]
+const uniqueArr = bUtils.unique(arr)
+uniqueArr // [1, 2, 3, 4]
+arr // [1, 2, 3, 3, 2, 4]
 ```
 
-## 7. 字符串函数
+### 5.3 range 生成整数数组
 
-### 7.1 fromCamelCase 驼峰转其他形式
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用来创建 `start` 到 `stop` （不包括`stop`）整数数组，方便用数组的方法。
+
+#### 用法 [Syntax]
+
+> ```js
+> range([start, ]stop[, step])
+> ```
+
+#### 参数 [Parameters]
+
+`start`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，起始值，可选，缺省值为 0
+
+`stop`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，结束值，生成的数组中不包含结束值
+
+`step`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，可选，若 `start` < `stop`，默认步长为 1；若 `start` > `stop`，默认步长为 -1
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 生成的整数列表数组
+
+#### 例子 [examples]
+
+```js
+bUtils.range(5);
+// [0, 1, 2, 3, 4]
+
+bUtils.range(1, 5);
+// [1, 2, 3, 4]
+
+bUtils.range(0, 20, 5);
+// [0, 5, 10, 15]
+
+bUtils.range(0, -5);
+// [0, -1, -2, -3, -4]
+
+bUtils.range(0, -5, -1);
+// [0, -1, -2, -3, -4]
+
+bUtils.range(0)
+// []
+```
+
+## 6. 字符串函数
+
+### 6.1 fromCamelCase 驼峰转其他形式
 
 #### 描述 [description]
 
@@ -666,7 +673,7 @@ console.log(after2)  // some camel case name
 console.log(after3)  // some_camel_case_name
 ```
 
-### 7.2 toCamelCase 其他形式转驼峰
+### 6.2 toCamelCase 其他形式转驼峰
 
 #### 描述 [description]
 
@@ -711,3 +718,125 @@ bUtils.toCamelCase(before3, true) // SomeJavascriptProperty
 bUtils.toCamelCase(before4, true) // SomeMixedStringDemo
 ```
 
+## 7. URL
+
+### 7.1 getUrlParams 将 url 参数转为对象
+
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将 url 的参数转为对象的形式
+
+#### 用法 [Syntax]
+
+> ```js
+> getUrlParams(url)
+> ```
+
+#### 参数 [Parameters]
+
+`url`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数对象的 url 
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 参数对象
+
+#### 例子 [examples]
+
+```js
+const url = 'http://url.com/page?name=Adam&age=18';
+
+bUtils.getUrlParams(url);
+// { name: 'Adam', age: 18 }
+```
+
+### 7.2 addParamsToUrl 给 url 拼接参数
+
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于给 url 添加 search 部分
+
+#### 用法 [Syntax]
+
+> ```js
+> addParamsToUrl(baseUrl, params)
+> ```
+
+#### 参数 [Parameters]
+
+`baseUrl`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要添加 search 的 url
+
+`params`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object 类型，表示参数对象，以键值对存放
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拼接后的 url
+
+#### 例子 [examples]
+
+```js
+const baseUrl = 'https://www.babyeye.com';
+
+bUtils.addParamsToUrl(baseUrl, {
+  username: 'dylan',
+  gender: 'male'
+});
+// https://www.babyeye.com?username=dylan&gender=male
+
+const baseUrl2 = 'https://www.babyeye.com?age=18';
+bUtils.addParamsToUrl(baseUrl2, {
+  username: 'dylan',
+  gender: 'male'
+});
+// https://www.babyeye.com?age=18&username=dylan&gender=male
+```
+
+## 8. 时间函数
+
+### 8.1 parseTime 格式化时间
+
+#### 描述 [description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于将时间对象或者时间戳格式化为指定形式的字符串
+
+#### 用法 [Syntax]
+
+> ```js
+> parseTime(time[, format])
+> ```
+
+#### 参数 [Parameters]
+
+`time`
+
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要格式化的时间对象，或者时间戳
+
+`format`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **string** 类型，可选，缺省值为 `'{y}-{m}-{d} {h}:{i}:{s}'`
+
+|  y   |  m   |  d   |  h   |  i   |  s   |  a   |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|  年  |  月  |  日  |  时  |  分  |  秒  | 星期 |
+
+#### 返回值 [return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格式化后的日期字符串
+
+#### 例子 [examples]
+
+```js
+const date = new Date();
+const timeStamp = new Date().getTime();
+
+bUtils.parseTime(date);  // 2018-04-17 11:42:37
+bUtils.parseTime(date, '{y}-{m}-{d} {a}'); // 2018-04-17 星期二
+bUtils.parseTime(timeStamp, '{h}:{i}:{s}'); // 11:47:10
+```
+
+## 
