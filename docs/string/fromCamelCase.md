@@ -1,4 +1,4 @@
-### 7.1 fromCamelCase 驼峰转其他形式
+### 6.1 fromCamelCase 驼峰转其他形式
 
 #### 描述 [description]
 

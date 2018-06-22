@@ -1,4 +1,4 @@
-### 4.1 scrollTo 滚动
+### 2.1 scrollTo 滚动
 
 #### 描述 [description]
 

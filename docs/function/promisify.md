@@ -1,4 +1,4 @@
-### 5.3 promisify 函数 Promise 化
+### 4.3 promisify 函数 Promise 化
 
 #### 描述 [description]
 

@@ -1,4 +1,4 @@
-### 7.2 toCamelCase 其他形式转驼峰
+### 6.2 toCamelCase 其他形式转驼峰
 
 #### 描述 [description]
 

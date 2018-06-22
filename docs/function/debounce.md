@@ -1,4 +1,4 @@
-### 5.2 debounce 函数防抖
+### 4.2 debounce 函数防抖
 
 #### 描述 [description]
 

@@ -1,4 +1,4 @@
-### 5.1 throttle 函数节流
+### 4.1 throttle 函数节流
 
 #### 描述 [description]
 

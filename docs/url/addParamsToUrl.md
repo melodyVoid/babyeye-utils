@@ -1,4 +1,4 @@
-### 6.2 addParamsToUrl 给 url 拼接参数
+### 7.2 addParamsToUrl 给 url 拼接参数
 
 #### 描述 [description]
 

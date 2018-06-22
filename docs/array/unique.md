@@ -1,4 +1,4 @@
-### 2.2 unique 数组去重
+### 5.2 unique 数组去重
 
 #### 描述 [description]
 

@@ -1,4 +1,4 @@
-### 6.1 getUrlParams 将 url 参数转为对象
+### 7.1 getUrlParams 将 url 参数转为对象
 
 #### 描述 [description]
 
