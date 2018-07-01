@@ -1,6 +1,6 @@
 ### 4.3 promisify 函数 Promise 化
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 转换异步函数以返回一个 Promise
 
@@ -16,13 +16,13 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **function** 类型，需要被转换的异步函数
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 被转换后的异步函数
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. 该函数执行后返回一个  `Promise` 
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 function delay(time, cb) {

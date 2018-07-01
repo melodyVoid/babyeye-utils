@@ -1,6 +1,6 @@
 ### 7.2 addParamsToUrl 给 url 拼接参数
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于给 url 添加 search 部分
 
@@ -20,11 +20,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object 类型，表示参数对象，以键值对存放
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拼接后的 url
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const baseUrl = 'https://www.babyeye.com';

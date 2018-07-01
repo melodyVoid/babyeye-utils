@@ -1,6 +1,6 @@
 ### 6.1 fromCamelCase 驼峰转其他形式
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将驼峰形式的字符串转换成其他形式
 
@@ -20,11 +20,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，分隔符，例如 `-`、 `_` 、 ` `(空格)。可选，缺省值为 `-`  
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 转换后的字符串
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const before = 'someCamelCaseName'

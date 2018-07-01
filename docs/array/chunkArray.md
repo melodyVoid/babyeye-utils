@@ -1,6 +1,6 @@
 ### 5.1 chunkArray 拆分数组
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组按照指定长度（第二个参数）拆分成若干数组
 
@@ -20,11 +20,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，表示按照什么长度来拆分数组
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二维数组，每一项是被拆分后的数组
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];

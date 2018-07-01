@@ -1,6 +1,6 @@
 ### 5.3 range 生成整数数组
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用来创建 `start` 到 `stop` （不包括`stop`）整数数组，方便用数组的方法。
 
@@ -24,11 +24,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; number 类型，可选，若 `start` < `stop`，默认步长为 1；若 `start` > `stop`，默认步长为 -1
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 生成的整数列表数组
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 bUtils.range(5);

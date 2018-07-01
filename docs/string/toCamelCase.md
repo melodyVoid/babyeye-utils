@@ -1,6 +1,6 @@
 ### 6.2 toCamelCase 其他形式转驼峰
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将其他形式的字符串（以下划线、连字符和空格作为分隔符）转换成驼峰形式
 
@@ -20,11 +20,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; boolean 类型，是否转换为大驼峰，可选，缺省值为 `false`，即默认转换成小驼峰的形式
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 转换后的字符串
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const before = 'some words with spaces'

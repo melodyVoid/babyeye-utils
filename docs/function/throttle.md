@@ -1,6 +1,6 @@
 ### 4.1 throttle 函数节流
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 预先设定一个执行周期 `wait`，当调用动作的时刻大于等于执行周期则执行该动作，然后进入下一个新周期
 
@@ -24,7 +24,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **object** 类型，可选，缺省值为 `{ leading: true, trailing: true }`，`leading` 表示开始的时候是否立即执行；`trailing` 表示在结束的时候是否再调用一下函数
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 节流后的函数
 
@@ -42,7 +42,7 @@
 2. `{ leading: false }` 或 `{ leading: false, trailing: true }` 表示不立即执行但却在周期结束后执行一次函数
 3. `{ trailing: false }` 或 `{ leading: true, trailing: false }` 表示立即执行，在周期结束后不再执行函数
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```html
 <style>
@@ -72,7 +72,7 @@ function foo(e) {
   console.log(e)
   console.log(this)
   oBox.innerHTML = count++
-  return 'return value'
+  return 'Return value'
 }
 
 const throttleAction = bUtils.throttle(foo, 3000)

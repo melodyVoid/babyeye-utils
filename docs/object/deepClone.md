@@ -1,6 +1,6 @@
 ### 3.2 deepClone 深复制
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于深复制一个对象
 
@@ -16,11 +16,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 任何类型，想要克隆的对象、数组、函数...
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 返回克隆后的对象、数组、函数...
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const obj = {
