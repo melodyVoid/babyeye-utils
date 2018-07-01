@@ -1,6 +1,6 @@
 ### 4.2 debounce 函数防抖
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当调用动作过 `wait `毫秒后，才会执行该动作，若在这 `wait` 毫秒内又调用此动作则将重新计算执行时间
 
@@ -24,7 +24,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **boolean** 类型，可选，缺省值为 false，表示是否立即执行，如果为 `true`，`debounce` 会在 `wait` 时间间隔的开始调用这个函数 
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 防抖后的函数
 
@@ -32,7 +32,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. 该函数执行后返回一个  `Promise` ，里面存储着 `fn` 的返回值
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```html
 <style>

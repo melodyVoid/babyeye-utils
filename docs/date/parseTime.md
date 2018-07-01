@@ -1,6 +1,6 @@
 ### 8.1 parseTime 格式化时间
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于将时间对象或者时间戳格式化为指定形式的字符串
 
@@ -24,11 +24,11 @@
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |  年  |  月  |  日  |  时  |  分  |  秒  | 星期 |
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格式化后的日期字符串
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const date = new Date();

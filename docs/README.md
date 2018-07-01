@@ -37,7 +37,7 @@ bUtils.parseTime(new Date())
 
 ### 1.1 is360 判断浏览器是否为 360 浏览器
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于判断浏览器是否为 360 浏览器
 
@@ -51,16 +51,25 @@ bUtils.parseTime(new Date())
 
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**无**
 
+<<<<<<< HEAD
 #### 返回值 [return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布尔值，是360浏览器为 `true`，否则为 `false`。
 
 #### 例子 [examples]
+=======
+#### 返回值 [Return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布尔值，是360浏览器为 `true`，否则为 `false`。
+
+#### 例子 [Examples]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ```js
 // 用 Chrome 测试。
 bUtils.is360(); // false
 ```
+<<<<<<< HEAD
 
 ### 1.2 isMobile 判断是否为移动设备
 
@@ -77,12 +86,34 @@ bUtils.is360(); // false
 #### 参数 [Parameters]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **无**
+=======
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
-#### 返回值 [return value]
+### 1.2 isMobile 判断是否为移动设备
+
+<<<<<<< HEAD
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 布尔值，是移动设备为 `true`，否则为 `false`。
+=======
+#### 描述 [Description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于判断该设备是否为移动设备
+
+#### 用法 [Syntax]
+
+> ```js
+> isMobile()
+> ```
+
+#### 参数 [Parameters]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **无**
+
+#### 返回值 [Return value]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 布尔值，是移动设备为 `true`，否则为 `false`。
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 // Chrome 
@@ -93,9 +124,15 @@ bUtils.isMobile()  // true
 ```
 
 ### 1.3 getCookie 获取 cookie 中的值
+<<<<<<< HEAD
 
 #### 描述 [description]
 
+=======
+
+#### 描述 [Description]
+
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于获取 cookie 中的值。
 
 #### 用法 [Syntax]
@@ -110,11 +147,11 @@ bUtils.isMobile()  // true
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取 cookie 的 name
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取到的 cookie 中的值，若没有则返回 `undefined`。
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 // cookie 里有 uid
@@ -126,7 +163,7 @@ bUtils.getCookie('hid'); // undefined
 
 ### 1.4 getParam 获取 url 中的参数值
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于获取 url 中的参数的值。
 
@@ -141,16 +178,27 @@ bUtils.getCookie('hid'); // undefined
 `url`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数值的 url 
+<<<<<<< HEAD
 
 `name`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数值的 name
+=======
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
-#### 返回值 [return value]
+`name`
+
+<<<<<<< HEAD
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取到的参数值
+=======
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数值的 name
+
+#### 返回值 [Return value]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取到的参数值
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const url = 'http://url.com/page?name=Dylan&age=18';
@@ -161,11 +209,19 @@ bUtils.getParam(url, 'gender');// undefined
 ```
 
 ## 2. DOM函数
+<<<<<<< HEAD
+
+### 2.1 scrollTo 滚动
+=======
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ### 2.1 scrollTo 滚动
 
-#### 描述 [description]
+<<<<<<< HEAD
+=======
+#### 描述 [Description]
 
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使 document 滚动到某一元素的位置，可用于滚动到指定锚点、回到顶部等。
 
 #### 用法 [Syntax]
@@ -177,6 +233,14 @@ bUtils.getParam(url, 'gender');// undefined
 #### 参数 [Parameters]
 
 `element`
+<<<<<<< HEAD
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **object** 类型，DOM元素，表示 `document` 滚动到该元素的位置
+
+`ratio`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，缓动系数，取值在 0 ~ 1 之间，值越大，滚动速度越快，缺省值为 0.1
+=======
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **object** 类型，DOM元素，表示 `document` 滚动到该元素的位置
 
@@ -184,11 +248,16 @@ bUtils.getParam(url, 'gender');// undefined
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，缓动系数，取值在 0 ~ 1 之间，值越大，滚动速度越快，缺省值为 0.1
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无返回值
 
-#### 例子 [examples]
+<<<<<<< HEAD
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无返回值
+=======
+#### 例子 [Examples]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ```html
 <button id="btn">滚动到锚点</button>
@@ -199,6 +268,18 @@ bUtils.getParam(url, 'gender');// undefined
 </div>
 ```
 
+<<<<<<< HEAD
+```html
+<button id="btn">滚动到锚点</button>
+...
+...
+<div class="box">
+  <div id="anchor"></div>
+</div>
+```
+
+=======
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 ```js
 const oBtn = documemt.getElementById('btn');
 const oAnchor = document.getElementById('anchor');
@@ -212,7 +293,7 @@ oBtn.addEvementListener('click', () => {
 
 ### 3.1 cleanObj 清空对象
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于清空一个对象，第二个参数是一个数组，里面存放不想被清空的对象的 `key`
 
@@ -232,11 +313,11 @@ oBtn.addEvementListener('click', () => {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，需要被保留的对象的键
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 返回被清空或被部分清空的对象
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const obj = {
@@ -251,7 +332,7 @@ bUtils.cleanObj(obj, ['name']) // { name: 'jack', age: '', gender: '' }
 
 ### 3.2 deepClone 深复制
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于深复制一个对象
 
@@ -267,11 +348,11 @@ bUtils.cleanObj(obj, ['name']) // { name: 'jack', age: '', gender: '' }
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 任何类型，想要克隆的对象、数组、函数...
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 返回克隆后的对象、数组、函数...
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const obj = {
@@ -307,7 +388,11 @@ cloneArr
 
 ### 4.1 throttle 函数节流
 
+<<<<<<< HEAD
 #### 描述 [description]
+=======
+#### 描述 [Description]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 预先设定一个执行周期 `wait`，当调用动作的时刻大于等于执行周期则执行该动作，然后进入下一个新周期
 
@@ -331,7 +416,7 @@ cloneArr
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **object** 类型，可选，缺省值为 `{ leading: true, trailing: true }`，`leading` 表示开始的时候是否立即执行；`trailing` 表示在结束的时候是否再调用一下函数
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 节流后的函数
 
@@ -349,7 +434,7 @@ cloneArr
 2. `{ leading: false }` 或 `{ leading: false, trailing: true }` 表示不立即执行但却在周期结束后执行一次函数
 3. `{ trailing: false }` 或 `{ leading: true, trailing: false }` 表示立即执行，在周期结束后不再执行函数
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```html
 <style>
@@ -379,7 +464,7 @@ function foo(e) {
   console.log(e)
   console.log(this)
   oBox.innerHTML = count++
-  return 'return value'
+  return 'Return value'
 }
 
 const throttleAction = bUtils.throttle(foo, 3000)
@@ -394,7 +479,7 @@ oBtn.onclick = () => {
 
 ### 4.2 debounce 函数防抖
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当调用动作过 `wait `毫秒后，才会执行该动作，若在这 `wait` 毫秒内又调用此动作则将重新计算执行时间
 
@@ -418,7 +503,7 @@ oBtn.onclick = () => {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **boolean** 类型，可选，缺省值为 false，表示是否立即执行，如果为 `true`，`debounce` 会在 `wait` 时间间隔的开始调用这个函数 
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 防抖后的函数
 
@@ -426,7 +511,7 @@ oBtn.onclick = () => {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. 该函数执行后返回一个  `Promise` ，里面存储着 `fn` 的返回值
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```html
 <style>
@@ -472,7 +557,7 @@ bUtils.debounce(foo, 1000, true)().then(res => console.log(res)); // 获取函�
 
 ### 4.3 promisify 函数 Promise 化
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 转换异步函数以返回一个 Promise
 
@@ -488,13 +573,13 @@ bUtils.debounce(foo, 1000, true)().then(res => console.log(res)); // 获取函�
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **function** 类型，需要被转换的异步函数
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 被转换后的异步函数
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. 该函数执行后返回一个  `Promise` 
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 function delay(time, cb) {
@@ -514,7 +599,7 @@ newDelay(3000).then(() => console.log('3s后执行'))
 
 ### 5.1 chunkArray 拆分数组
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组按照指定长度（第二个参数）拆分成若干数组
 
@@ -529,16 +614,27 @@ newDelay(3000).then(() => console.log('3s后执行'))
 `arr`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，被拆分的数组
+<<<<<<< HEAD
 
 `size`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，表示按照什么长度来拆分数组
+=======
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
-#### 返回值 [return value]
+`size`
+
+<<<<<<< HEAD
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二维数组，每一项是被拆分后的数组
+=======
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，表示按照什么长度来拆分数组
+
+#### 返回值 [Return value]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二维数组，每一项是被拆分后的数组
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -548,11 +644,19 @@ bUtils.chunkArray(arr, 3) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 bUtils.chunkArray(arr, 5) // [[1, 2, 3, 4, 5], [6, 7, 8]]
 bUtils.chunkArray(arr, 9) // [1, 2, 3, 4, 5, 6, 7, 8]
 ```
+<<<<<<< HEAD
+
+### 5.2 unique 数组去重
+=======
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ### 5.2 unique 数组去重
 
-#### 描述 [description]
+<<<<<<< HEAD
+=======
+#### 描述 [Description]
 
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 将数组中的重复元素去掉
 
 #### 用法 [Syntax]
@@ -567,6 +671,7 @@ bUtils.chunkArray(arr, 9) // [1, 2, 3, 4, 5, 6, 7, 8]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **array** 类型，需要去重的数组
 
+<<<<<<< HEAD
 #### 返回值 [return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 去重后的数组，不会改变原数组
@@ -605,12 +710,56 @@ arr // [1, 2, 3, 3, 2, 4]
 `step`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，可选，若 `start` < `stop`，默认步长为 1；若 `start` > `stop`，默认步长为 -1
+=======
+#### 返回值 [Return value]
 
-#### 返回值 [return value]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 去重后的数组，不会改变原数组
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
+
+#### 例子 [Examples]
+
+<<<<<<< HEAD
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 生成的整数列表数组
+=======
+```js
+const arr = [1, 2, 3, 3, 2, 4]
+const uniqueArr = bUtils.unique(arr)
+uniqueArr // [1, 2, 3, 4]
+arr // [1, 2, 3, 3, 2, 4]
+```
+
+### 5.3 range 生成整数数组
+
+#### 描述 [Description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用来创建 `start` 到 `stop` （不包括`stop`）整数数组，方便用数组的方法。
+
+#### 用法 [Syntax]
+
+> ```js
+> range([start, ]stop[, step])
+> ```
+
+#### 参数 [Parameters]
+
+`start`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，起始值，可选，缺省值为 0
+
+`stop`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，结束值，生成的数组中不包含结束值
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
+
+`step`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **number** 类型，可选，若 `start` < `stop`，默认步长为 1；若 `start` > `stop`，默认步长为 -1
+
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 生成的整数列表数组
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 bUtils.range(5);
@@ -636,7 +785,7 @@ bUtils.range(0)
 
 ### 6.1 fromCamelCase 驼峰转其他形式
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将驼峰形式的字符串转换成其他形式
 
@@ -656,11 +805,11 @@ bUtils.range(0)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，分隔符，例如 `-`、 `_` 、 ` `(空格)。可选，缺省值为 `-`  
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 转换后的字符串
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const before = 'someCamelCaseName'
@@ -675,7 +824,7 @@ console.log(after3)  // some_camel_case_name
 
 ### 6.2 toCamelCase 其他形式转驼峰
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将其他形式的字符串（以下划线、连字符和空格作为分隔符）转换成驼峰形式
 
@@ -695,11 +844,11 @@ console.log(after3)  // some_camel_case_name
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; boolean 类型，是否转换为大驼峰，可选，缺省值为 `false`，即默认转换成小驼峰的形式
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 转换后的字符串
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 const before = 'some words with spaces'
@@ -722,7 +871,11 @@ bUtils.toCamelCase(before4, true) // SomeMixedStringDemo
 
 ### 7.1 getUrlParams 将 url 参数转为对象
 
+<<<<<<< HEAD
 #### 描述 [description]
+=======
+#### 描述 [Description]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于将 url 的参数转为对象的形式
 
@@ -738,11 +891,19 @@ bUtils.toCamelCase(before4, true) // SomeMixedStringDemo
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取参数对象的 url 
 
+<<<<<<< HEAD
 #### 返回值 [return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 参数对象
 
 #### 例子 [examples]
+=======
+#### 返回值 [Return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 参数对象
+
+#### 例子 [Examples]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ```js
 const url = 'http://url.com/page?name=Adam&age=18';
@@ -753,7 +914,11 @@ bUtils.getUrlParams(url);
 
 ### 7.2 addParamsToUrl 给 url 拼接参数
 
+<<<<<<< HEAD
 #### 描述 [description]
+=======
+#### 描述 [Description]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于给 url 添加 search 部分
 
@@ -773,11 +938,19 @@ bUtils.getUrlParams(url);
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; object 类型，表示参数对象，以键值对存放
 
+<<<<<<< HEAD
 #### 返回值 [return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拼接后的 url
 
 #### 例子 [examples]
+=======
+#### 返回值 [Return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拼接后的 url
+
+#### 例子 [Examples]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ```js
 const baseUrl = 'https://www.babyeye.com';
@@ -800,7 +973,11 @@ bUtils.addParamsToUrl(baseUrl2, {
 
 ### 8.1 parseTime 格式化时间
 
+<<<<<<< HEAD
 #### 描述 [description]
+=======
+#### 描述 [Description]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于将时间对象或者时间戳格式化为指定形式的字符串
 
@@ -824,11 +1001,19 @@ bUtils.addParamsToUrl(baseUrl2, {
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |  年  |  月  |  日  |  时  |  分  |  秒  | 星期 |
 
+<<<<<<< HEAD
 #### 返回值 [return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格式化后的日期字符串
 
 #### 例子 [examples]
+=======
+#### 返回值 [Return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格式化后的日期字符串
+
+#### 例子 [Examples]
+>>>>>>> fc24cf07acdee7479372545a66a647ebe979abfb
 
 ```js
 const date = new Date();

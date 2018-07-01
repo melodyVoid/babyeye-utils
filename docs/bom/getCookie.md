@@ -1,6 +1,6 @@
 ### 1.3 getCookie 获取 cookie 中的值
 
-#### 描述 [description]
+#### 描述 [Description]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于获取 cookie 中的值。
 
@@ -16,11 +16,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string 类型，需要获取 cookie 的 name
 
-#### 返回值 [return value]
+#### 返回值 [Return value]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 获取到的 cookie 中的值，若没有则返回 `undefined`。
 
-#### 例子 [examples]
+#### 例子 [Examples]
 
 ```js
 // cookie 里有 uid
