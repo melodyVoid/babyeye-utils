@@ -20,3 +20,16 @@ export function is360() {
   const is360Value = _mime('type', 'application/vnd.chromium.remoting-viewer')
   return isChrome() && is360Value
 }
+
+export function isPC() {
+  const ua = navigator.userAgent
+  const uaList = ['Android', 'iPhone', 'SymbianOS', 'Windows Phone', 'iPad', 'iPod']
+  let flag = true
+  for (const uaItem of uaList) {
+    if (ua.includes(uaItem)) {
+      flag = false
+      break
+    }
+  }
+  return flag
+}

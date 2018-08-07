@@ -132,3 +132,5 @@ console.log(bUtils.getCookie('pass1'))
 console.log(bUtils.isMobile())
 
 console.log(bUtils.getParam('https://www.babyeye.com?age=18', 'age'))
+
+console.log(bUtils.isPC(), 'isPC')
