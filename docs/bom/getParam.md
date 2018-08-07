@@ -1,4 +1,4 @@
-### 1.4 getParam 获取 url 中的参数值
+### 1.5 getParam 获取 url 中的参数值
 
 #### 描述 [Description]
 

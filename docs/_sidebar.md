@@ -5,6 +5,7 @@
 
   - 浏览器函数
     - [is360 判断360](bom/is360.md)
+    - [isPC 判断PC](bom/isPC.md)
     - [isMobile 判断移动设备](bom/isMobile.md)
     - [getCookie cookie取值](bom/getCookie.md)
     - [getParam url取参](bom/getParam.md)

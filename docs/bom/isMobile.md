@@ -1,4 +1,4 @@
-### 1.2 isMobile 判断是否为移动设备
+### 1.3 isMobile 判断是否为移动设备
 
 #### 描述 [Description]
 

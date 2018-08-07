@@ -62,7 +62,37 @@ bUtils.parseTime(new Date())
 bUtils.is360(); // false
 ```
 
-### 1.2 isMobile 判断是否为移动设备
+### 1.2 isPC 判断是否为PC
+
+#### 描述 [Description]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于判断该设备是否为PC
+
+#### 用法 [Syntax]
+
+> ```js
+> isPC()
+> ```
+
+#### 参数 [Parameters]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **无**
+
+#### 返回值 [Return value]
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 布尔值，是 PC 设备为 `true`，否则为 `false`。
+
+#### 例子 [Examples]
+
+```js
+// Chrome 
+bUtils.isPC()  // true
+
+// Chrome 打开移动设备模拟器
+bUtils.isPC()  // false
+```
+
+### 1.3 isMobile 判断是否为移动设备
 
 #### 描述 [Description]
 
@@ -92,7 +122,7 @@ bUtils.isMobile()  // false
 bUtils.isMobile()  // true
 ```
 
-### 1.3 getCookie 获取 cookie 中的值
+### 1.4 getCookie 获取 cookie 中的值
 
 #### 描述 [Description]
 
@@ -124,7 +154,7 @@ bUtils.getCookie('uid'); // '333'
 bUtils.getCookie('hid'); // undefined
 ```
 
-### 1.4 getParam 获取 url 中的参数值
+### 1.5 getParam 获取 url 中的参数值
 
 #### 描述 [Description]
 

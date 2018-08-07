@@ -1,4 +1,4 @@
-### 1.3 getCookie 获取 cookie 中的值
+### 1.4 getCookie 获取 cookie 中的值
 
 #### 描述 [Description]
 
