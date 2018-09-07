@@ -1,9 +1,9 @@
 import debounce from './debounce'
 import throttle from './throttle'
-import promisity from './promisity'
+import promisify from './promisify'
 
 export {
   debounce,
   throttle,
-  promisity
+  promisify
 }

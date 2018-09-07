@@ -534,7 +534,7 @@ function delay(time, cb) {
 delay(3000, () => console.log('3s后执行'))
 
 // Promise 化
-const newDelay = bUtils.promisity(delay)
+const newDelay = bUtils.promisify(delay)
 
 // 转化后调用
 newDelay(3000).then(() => console.log('3s后执行'))

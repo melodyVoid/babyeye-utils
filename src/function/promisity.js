@@ -1,4 +1,4 @@
-export default function promisity(fn) {
+export default function promisify(fn) {
   return (...args) =>
     new Promise((resolve, reject) => {
       fn(...args, (err, data) => {

@@ -88,7 +88,7 @@ document.onclick = () => {
 //   setTimeout(cb, time)
 // }
 
-// const newDelay = bUtils.promisity(delay)
+// const newDelay = bUtils.promisify(delay)
 
 // newDelay(3000).then(() => console.log('3s后执行'))
 
